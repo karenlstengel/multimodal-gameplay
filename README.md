@@ -3,14 +3,15 @@ Multimodal prediction of intent, confusion, and mental workload during gameplay.
 
 
 ## Confusion
-\\textit{Facial Action Units}
+__Facial Action Units__
 - Brow lowering (AU4) and eyelid tightening (AU7) were correlated with confusion in [D'Mello...Greasser 2014]
 
-\\textit{Gaze}
+
+__Gaze__
 
 
 ## Cognitive Load/Frustration
-\\textit{Facial Action Units}
+__Facial Action Units__
 - Inner and outer brow raising (AU1, AU2) were correlated with frustration. [D'Mello...Greasser 2014]
 
 Ramakrishnan, B Balasingam, and F Biondi. 2021. Cognitive load estimation
