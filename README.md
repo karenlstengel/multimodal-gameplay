@@ -5,6 +5,8 @@ But really - let's just have some fun! Agents can increase task performance, but
 
 ## Multimodal Data
 
+__Data Sources:__ Tobii Eye tracking, facial video, voice recording. Long-term = OpenBCI EEG Headset
+
 ### Confusion
 __Video and Facial Action Units__
 - Brow lowering (AU4) and eyelid tightening (AU7) were correlated with confusion in [D'Mello...Greasser 2014]
@@ -32,7 +34,7 @@ for adaptive human–machine system automation. In Learning control. Elsevier,
 
 
 ### Intent
-
+Reseacrh needed, focusing on eye gaze.
 
 ## Agents
 
