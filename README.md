@@ -3,7 +3,7 @@ Multimodal prediction of intent, confusion, and mental workload during gameplay.
 
 But really - let's just have some fun! Agents can increase task performance, but how can interactions during gameplay increase enjoyment, playfulness as well.
 
-## Multimodal Data
+# Multimodal Data
 
 __Data Sources:__ Tobii Eye tracking, facial video, voice recording. Long-term = OpenBCI EEG Headset
 
@@ -36,7 +36,7 @@ for adaptive human–machine system automation. In Learning control. Elsevier,
 ### Intent
 Research needed, focusing on eye gaze.
 
-## Agents
+# Agents
 
 ### Puzzle/Shrine Agent
 __Purpose:__ The puzzle/shrine agents retrieves and stores the steps to solve a shrine when you enter. At first, it will help you through the steps when asked. Eventually as we build out the system and train it, it will prompt the player when confusun or frustration is detected. The long-term goal is to learn about the player: how long they are okay with being confused before offering help, best timing of agent to offer help.
