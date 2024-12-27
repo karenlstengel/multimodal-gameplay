@@ -1,30 +1,45 @@
+'''
+When player enters a shrine, they request to initiat the Shrine agent the previous X frames of video 
+will be searched to to grab the shrine name. Then steps will be grabbed and stored for use when player asks
+
+To do: create game state class instead of json
+To do: keep track of which step player is on.
+'''
+
 from openai import OpenAI
 import json
 
 
-# Load the API key 
-with open("config.json", "r") as file:
-    config = json.load(file)
-    api_key = config["apiKey"]
+def load_json(jfile):
+    with open(jfile, "r") as file:
+        output_dict = json.load(file)
+        return output_dict
+    
+    
+
+# Load config file
+config = load_json("config.json")
+
+#load game state file
+game_state = load_json("game_state.json")
+shrine = game_state['current_activity']
 
 # Initialize the OpenAI client
 client = OpenAI(api_key=config["apiKey"])
 
 
-
-# Define the prompt
-prompt = """
-Using this webpage: https://www.polygon.com/zelda-tears-of-the-kingdom-guide/23707990/riogok-shrine-solution-puzzle-chest
-list out the steps to solve the shrine
-"""
+# Prompt to get shrine steps
+prompt_url = """
+Using the website https://www.polygon.com/ find the entry for the %s from tears of the kingdom. Print out its url.
+""" % (shrine)
 
 # Make the API call
 response = client.chat.completions.create(
     model="gpt-4",
     messages=[
-        {"role": "user", "content": prompt}
+        {"role": "user", "content": prompt_url}
     ],
-    max_tokens=500,
+    max_tokens=2000,
     temperature=0.7
 )
 
