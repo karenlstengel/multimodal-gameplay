@@ -34,7 +34,7 @@ for adaptive human–machine system automation. In Learning control. Elsevier,
 
 
 ### Intent
-Reseacrh needed, focusing on eye gaze.
+Research needed, focusing on eye gaze.
 
 ## Agents
 
